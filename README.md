@@ -1,3 +1,7 @@
+[![make.fun · news-image-20261125](https://make.fun/badge/news-image-20261125.svg)](https://make.fun/bounty/news-image-20261125?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
+[![rank](https://make.fun/badge/news-image-20261125/sasa-darwish-dev/world-news-image-25-nov-2026/rank.svg)](https://make.fun/bounty/news-image-20261125/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
+[![reward](https://make.fun/badge/news-image-20261125/sasa-darwish-dev/world-news-image-25-nov-2026/reward.svg)](https://make.fun/bounty/news-image-20261125?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
+
 # Wednesday 25 November 2026 — World news
 
 A dense, self-contained editorial front page covering 37 stories from the verified 25 November fact list: three lead reports, thirteen illustrated mid-tier stories and twenty-one source-tagged briefs. It includes six key numbers, a UTC timeline, region counts, a numbered map and a date-check footer. Story copy is written directly into the HTML; rendering does not load the fact file or use the network.
