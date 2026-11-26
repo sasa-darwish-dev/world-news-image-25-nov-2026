@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><style>.line{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style><rect width="1024" height="1024" fill="#f3f0e9"/><text x="32" y="108" font-size="86" font-weight="800" fill="#172c34" letter-spacing="-5" font-family="DejaVu Sans" font-stretch="normal">WORLD NEWS</text><text x="32" y="158" font-size="30" font-weight="700" fill="#172c34" letter-spacing="0.3" font-family="DejaVu Sans" font-stretch="condensed">WEDNESDAY 25 NOVEMBER 2026</text><rect x="32" y="176" width="960" height="4" fill="#172c34"/><svg class="globe" aria-hidden="true" x="906" y="35" width="82" height="82" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#dde8e2"/>
+    <g fill="none" stroke="#21675d" stroke-width="2.5">
+      <circle cx="50" cy="50" r="39"/><ellipse cx="50" cy="50" rx="18" ry="39"/>
+      <path d="M12 50h76M20 27q30 12 60 0M20 73q30-12 60 0"/>
+    </g>
+    <circle cx="80" cy="23" r="9" fill="#c25b37" stroke="#f3f0e9" stroke-width="4"/>
+  </svg>
+<rect x="32" y="202" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="32" y="202" width="472" height="5" fill="#21675d"/><text x="56" y="247" font-size="26" font-weight="800" fill="#21675d" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">ASIA</text><text x="56" y="282" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">CHINA / PAKISTAN</text><svg class="icon" role="img" aria-label="Spacecraft launching toward an orbital station" x="378" y="221" width="105" height="88" color="#21675d" viewBox="0 0 110 92">
+      <circle cx="63" cy="42" r="38" fill="#e0ece5"/>
+      <g class="line"><path d="M20 59L48 31 64 47 36 75z" fill="#fffdf8"/>
+      <path d="M48 31l19-3-3 19M25 55l-13 1-6 19 19-7M41 71l-1 13 19-6 1-19"/>
+      <circle cx="47" cy="48" r="6"/><path d="M18 76L8 86m21-9-8 9" stroke="#c25b37"/>
+      <path d="M83 13v23m-7-12h15M68 16l8 1v14l-8-1zm23 1 12-1v14l-12 1z"/>
+      <path d="M80 55h8m-4-4v8"/></g>
+    </svg>
+    <text x="56" y="342" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">China launches first</text><text x="56" y="388" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">foreign astronaut</text><text x="56" y="428" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.7" font-family="DejaVu Sans" font-stretch="condensed">Shenzhou-24: Muhammad Zeeshan Ali</text><rect x="520" y="202" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="520" y="202" width="472" height="5" fill="#aa452c"/><text x="544" y="247" font-size="26" font-weight="800" fill="#aa452c" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">AFRICA</text><text x="544" y="282" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">EGYPT</text><svg class="icon" role="img" aria-label="Fuel tanker and a highway fire" x="866" y="221" width="105" height="88" color="#aa452c" viewBox="0 0 110 92">
+      <circle cx="61" cy="43" r="38" fill="#f6e5d9"/>
+      <path d="M60 46C44 34 68 28 62 9c20 13 15 21 22 27 3-9 9-10 10-16 19 25 9 40-10 42z" fill="#d87842"/>
+      <path d="M75 51c-7-12 8-14 6-25 13 14 3 15 10 23z" fill="#f7c378"/>
+      <g class="line"><rect x="7" y="47" width="53" height="26" rx="11" fill="#fffdf8"/>
+      <path d="M60 59h18l12 12v10H8m52-22v22M78 59v12h12M23 48v24m22-24v24"/>
+      <circle cx="24" cy="80" r="7" fill="#fffdf8"/><circle cx="75" cy="80" r="7" fill="#fffdf8"/>
+      <path d="M3 91h101"/></g>
+    </svg>
+    <text x="544" y="342" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Tanker fire</text><text x="544" y="388" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">kills at least 31</text><text x="544" y="428" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.45" font-family="DejaVu Sans" font-stretch="condensed">Highway tanker crash near Cairo</text><rect x="32" y="468" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="32" y="468" width="472" height="5" fill="#21675d"/><text x="56" y="513" font-size="26" font-weight="800" fill="#21675d" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">ASIA</text><text x="56" y="548" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">CHINA</text><svg class="icon" role="img" aria-label="Shanghai buildings and an investigation magnifying glass" x="378" y="487" width="105" height="88" color="#21675d" viewBox="0 0 110 92">
+      <circle cx="60" cy="44" r="38" fill="#e0ece5"/>
+      <g class="line"><path d="M7 84h88M13 82V49h20V28h27v51M33 49v33M45 28V13m-8 8h16M69 44V27h18v27"/>
+      <path d="M21 58v5m0 8v5M42 39h8m-8 11h8m-8 11h8"/>
+      <circle cx="77" cy="63" r="18" fill="#fffdf8"/><path d="M90 77l14 14" stroke-width="7"/>
+      <path d="M70 63h14m-7-7v14"/></g>
+    </svg>
+    <text x="56" y="608" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Shanghai party chief</text><text x="56" y="654" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">under investigation</text><text x="56" y="694" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.45" font-family="DejaVu Sans" font-stretch="condensed">Chen Jining: law, discipline probe</text><rect x="520" y="468" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="520" y="468" width="472" height="5" fill="#8c4d64"/><text x="544" y="513" font-size="26" font-weight="800" fill="#8c4d64" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">MIDDLE EAST</text><text x="544" y="548" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">GAZA</text><svg class="icon" role="img" aria-label="Damaged apartment building after an airstrike" x="866" y="487" width="105" height="88" color="#8c4d64" viewBox="0 0 110 92">
+      <circle cx="61" cy="43" r="38" fill="#eee1e5"/>
+      <g class="line"><path d="M14 85V27h39l-6 14 16 10-8 13 9 21M14 27V17h42l-3 10M71 85V44h24v41M5 87h98"/>
+      <path d="M25 36h8v9h-8zm0 22h8v9h-8zm52-5h9v9h-9zm0 17h9v9h-9zM42 75l-7 10m24-12 11 12"/>
+      <path d="M67 7l2 13-10 6 15 4 3 13 5-15 15-5-15-3-3-13-5 12z" fill="#fffdf8"/></g>
+    </svg>
+    <text x="544" y="608" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Israeli strike kills</text><text x="544" y="654" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Hamas's Abu al-Ouf</text><text x="544" y="694" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.45" font-family="DejaVu Sans" font-stretch="condensed">Wife and two daughters also killed</text><rect x="32" y="734" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="32" y="734" width="472" height="5" fill="#aa452c"/><text x="56" y="779" font-size="26" font-weight="800" fill="#aa452c" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">AFRICA</text><text x="56" y="814" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">SOUTH AFRICA</text><svg class="icon" role="img" aria-label="Court gavel and a report set aside" x="378" y="753" width="105" height="88" color="#aa452c" viewBox="0 0 110 92">
+      <circle cx="61" cy="43" r="38" fill="#f6e5d9"/>
+      <g class="line"><path d="M66 34h31v50H62V42z" fill="#fffdf8"/><path d="M66 34v10h31M70 54h19m-19 9h19m-19 9h13"/>
+      <path d="M28 27l13-13 27 27-13 13z" fill="#fffdf8"/><path d="M25 30l19-19M52 57l19-19M45 44L21 69" stroke-width="6"/>
+      <path d="M10 83h46v8H10z" fill="#fffdf8"/><path d="M14 77h38M61 88l41-41" stroke-width="4"/></g>
+    </svg>
+    <text x="56" y="874" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Court sets aside</text><text x="56" y="920" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Farmgate report</text><text x="56" y="960" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.45" font-family="DejaVu Sans" font-stretch="condensed">Report paved way for Ramaphosa bid</text><rect x="520" y="734" width="472" height="250" fill="#fffdf8" stroke="#d4d6cf"/><rect x="520" y="734" width="472" height="5" fill="#425b88"/><text x="544" y="779" font-size="26" font-weight="800" fill="#425b88" letter-spacing="1.4" font-family="DejaVu Sans" font-stretch="normal">EUROPE</text><text x="544" y="814" font-size="26" font-weight="800" fill="#172c34" letter-spacing="0" font-family="DejaVu Sans" font-stretch="condensed">UKRAINE</text><svg class="icon" role="img" aria-label="Power pylon with a broken electricity supply" x="866" y="753" width="105" height="88" color="#425b88" viewBox="0 0 110 92">
+      <circle cx="61" cy="43" r="38" fill="#e4e9f2"/>
+      <g class="line"><path d="M29 84L45 14h14l17 70M26 84h53M34 62h36M39 39h26M33 30h38M29 46h46M36 62l34 22M68 62L35 84M42 39l21 23M63 39L41 62"/>
+      <path d="M7 34l9 4m8 2 8 2M73 34l11-4m9-4 12-4M13 41v9m73-15v9"/>
+      <path d="M86 49L75 67h12l-5 19 20-28H89l7-9z" fill="#fffdf8"/></g>
+    </svg>
+    <text x="544" y="874" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Russia hits</text><text x="544" y="920" font-size="40" font-weight="700" fill="#172c34" letter-spacing="-1.2" font-family="DejaVu Sans" font-stretch="condensed">Ukraine’s power grid</text><text x="544" y="960" font-size="26" font-weight="400" fill="#172c34" letter-spacing="-0.45" font-family="DejaVu Sans" font-stretch="condensed">Officials: cuts across five regions</text></svg>
