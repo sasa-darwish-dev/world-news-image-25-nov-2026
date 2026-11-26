@@ -291,14 +291,14 @@
 
       .mid-card {
         display: grid;
-        grid-template-rows: 24px 44px 26px 12px 15px;
-        gap: 1px;
-        padding: 1px 5px 0;
+        grid-template-rows: 24px 49px 28px 13px 10px;
+        gap: .5px;
+        padding: 0 5px;
       }
 
       .mid-card .card-meta {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) auto;
+        grid-template-columns: minmax(0, 1fr);
         grid-template-rows: 10px 12px;
         row-gap: 1px;
         padding-bottom: 1px;
@@ -318,16 +318,8 @@
         margin-right: 0;
       }
 
-      .mid-card .card-meta > .source {
-        grid-column: 1;
-        grid-row: 1;
-        color: var(--muted);
-        font-size: 9px;
-        line-height: 10px;
-      }
-
       .mid-card .card-meta > .badge {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 1;
         justify-self: end;
         line-height: 10px;
@@ -336,33 +328,31 @@
       .mid-art {
         display: block;
         width: 100%;
-        height: 44px;
+        height: 49px;
         background: #e5e9e2;
       }
 
       .mid-card h2 {
         overflow: hidden;
         margin: 0;
-        font: 700 12.2px/13px 'DejaVu Serif', serif;
+        font: 700 13.2px/14px 'DejaVu Serif', serif;
         letter-spacing: -.2px;
       }
 
       .mid-card .summary {
         overflow: hidden;
         margin: 0;
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 10.5px;
+        line-height: 13px;
+        letter-spacing: -.1px;
+        white-space: nowrap;
       }
 
-      .mid-why {
+      .mid-card > .source {
         margin: 0;
-        padding-top: 2px;
-        border-top: 1px solid #e2ddd2;
-        color: var(--region);
+        color: var(--muted);
         font-size: 9px;
-        font-weight: 700;
-        line-height: 11px;
-        letter-spacing: -.25px;
+        line-height: 10px;
         white-space: nowrap;
       }
 
@@ -636,7 +626,7 @@
       <section class="mid" aria-label="Twelve illustrated mid-tier stories">
         <div class="mid-row">
           <article class="card mid-card africa" data-story="5">
-            <div class="card-meta"><span><b class="story-no">05</b><i class="dot"></i>GIZA · AFRICA</span><span class="source">AP, Al Jazeera</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">05</b><i class="dot"></i>GIZA · AFRICA</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Burning tanker truck">
               <defs><linearGradient id="banner-light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".32"/><stop offset="1" stop-color="#243c43" stop-opacity=".08"/></linearGradient></defs>
               <rect width="190" height="45" fill="#f2e6d6"/>
@@ -657,11 +647,11 @@
             </svg>
             <h2>Fuel tanker fire on Cairo ring road kills at least 31</h2>
             <p class="summary">Crash sparked a huge highway fire.</p>
-            <p class="mid-why">WHY IT MATTERS · 31+ die in Cairo highway fire.</p>
+            <div class="source">AP, Al Jazeera</div>
           </article>
 
           <article class="card mid-card europe" data-story="6">
-            <div class="card-meta"><span><b class="story-no">06</b><i class="dot"></i>LONDON · EUROPE</span><span class="source">Ofgem, BBC</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">06</b><i class="dot"></i>LONDON · EUROPE</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Energy bill rising">
               <rect width="190" height="45" fill="#e7e7df"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -677,11 +667,11 @@
             </svg>
             <h2>UK energy price cap rises 26% in January</h2>
             <p class="summary">Typical bill up about £37 monthly.</p>
-            <p class="mid-why">WHY IT MATTERS · Bills to rise by £37 monthly.</p>
+            <div class="source">Ofgem, BBC</div>
           </article>
 
           <article class="card mid-card middle-east" data-story="7">
-            <div class="card-meta"><span><b class="story-no">07</b><i class="dot"></i>GAZA CITY</span><span class="source">Reuters, BBC</span><span class="badge reported">REPORTED</span></div>
+            <div class="card-meta"><span><b class="story-no">07</b><i class="dot"></i>GAZA CITY</span><span class="badge reported">REPORTED</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Damaged apartment building">
               <rect width="190" height="45" fill="#eee1e4"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -697,13 +687,13 @@
             </svg>
             <h2>Israeli strike kills Hamas security chief Abuelouf</h2>
             <p class="summary">Wife and two daughters also killed.</p>
-            <p class="mid-why">WHY IT MATTERS · Two Hamas officials die in 24h.</p>
+            <div class="source">Reuters, BBC</div>
           </article>
         </div>
 
         <div class="mid-row">
           <article class="card mid-card middle-east" data-story="8">
-            <div class="card-meta"><span><b class="story-no">08</b><i class="dot"></i>JERUSALEM</span><span class="source">BBC, Al Jazeera</span><span class="badge reported">REPORTED</span></div>
+            <div class="card-meta"><span><b class="story-no">08</b><i class="dot"></i>JERUSALEM</span><span class="badge reported">REPORTED</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Courthouse columns">
               <rect width="190" height="45" fill="#e3e8eb"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -719,11 +709,11 @@
             </svg>
             <h2>Judges tell prosecutors to rethink Netanyahu case</h2>
             <p class="summary">Panel says conviction chances are low.</p>
-            <p class="mid-why">WHY IT MATTERS · Panel sees low odds in case.</p>
+            <div class="source">BBC, Al Jazeera</div>
           </article>
 
           <article class="card mid-card europe" data-story="9">
-            <div class="card-meta"><span><b class="story-no">09</b><i class="dot"></i>UKRAINE · EUROPE</span><span class="source">Euronews, Reuters</span><span class="badge reported">REPORTED</span></div>
+            <div class="card-meta"><span><b class="story-no">09</b><i class="dot"></i>UKRAINE · EUROPE</span><span class="badge reported">REPORTED</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Power pylon, energy symbol and distant power plant">
               <rect width="190" height="45" fill="#e1e7e9"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -738,11 +728,11 @@
             </svg>
             <h2>Russian drones kill 7 and cut power in regions</h2>
             <p class="summary">Gas site and DTEK plant hit.</p>
-            <p class="mid-why">WHY IT MATTERS · Gas site and power plant hit.</p>
+            <div class="source">Euronews, Reuters</div>
           </article>
 
           <article class="card mid-card africa" data-story="10">
-            <div class="card-meta"><span><b class="story-no">10</b><i class="dot"></i>BENGHAZI · AFRICA</span><span class="source">AP, Reuters</span><span class="badge reported">REPORTED</span></div>
+            <div class="card-meta"><span><b class="story-no">10</b><i class="dot"></i>BENGHAZI · AFRICA</span><span class="badge reported">REPORTED</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Ship and Libyan flag">
               <rect width="190" height="45" fill="#e7e9df"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -760,11 +750,11 @@
             </svg>
             <h2>Drone hits Russian ship; two Libyan officers die</h2>
             <p class="summary">Tajani: breaching sovereignty was a mistake.</p>
-            <p class="mid-why">WHY IT MATTERS · Two Libyans die in ship strike.</p>
+            <div class="source">AP, Reuters</div>
           </article>
 
           <article class="card mid-card americas" data-story="11">
-            <div class="card-meta"><span><b class="story-no">11</b><i class="dot"></i>MIDDLETOWN · AMERICAS</span><span class="source">AP, Reuters</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">11</b><i class="dot"></i>MIDDLETOWN · AMERICAS</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Rows of lead azide barrels">
               <rect width="190" height="45" fill="#eee7d7"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -780,13 +770,13 @@
             </svg>
             <h2>US Army to detonate 5 tons of lead azide</h2>
             <p class="summary">Evacuation within 5 miles.</p>
-            <p class="mid-why">WHY IT MATTERS · Stay indoors up to 20 miles.</p>
+            <div class="source">AP, Reuters</div>
           </article>
         </div>
 
         <div class="mid-row">
           <article class="card mid-card asia" data-story="12">
-            <div class="card-meta"><span><b class="story-no">12</b><i class="dot"></i>DHAKA · ASIA</span><span class="source">AP, Al Jazeera</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">12</b><i class="dot"></i>DHAKA · ASIA</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Garment with wage tag">
               <rect width="190" height="45" fill="#dfe9df"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -801,11 +791,11 @@
             </svg>
             <h2>Bangladesh garment minimum wage rises 36%</h2>
             <p class="summary">12,500 to 17,000 taka monthly.</p>
-            <p class="mid-why">WHY IT MATTERS · Pay up 36% to 17,000 taka.</p>
+            <div class="source">AP, Al Jazeera</div>
           </article>
 
           <article class="card mid-card europe" data-story="13">
-            <div class="card-meta"><span><b class="story-no">13</b><i class="dot"></i>CANARY ISLANDS · EUROPE</span><span class="source">Reuters</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">13</b><i class="dot"></i>CANARY ISLANDS · EUROPE</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Crowded migrant boat">
               <rect width="190" height="45" fill="#e0e8eb"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -824,11 +814,11 @@
             </svg>
             <h2>Record 2,100+ migrant arrivals in 24 hours</h2>
             <p class="summary">One dead; one woman gave birth at sea.</p>
-            <p class="mid-why">WHY IT MATTERS · One dead; one birth at sea.</p>
+            <div class="source">Reuters</div>
           </article>
 
           <article class="card mid-card africa" data-story="14">
-            <div class="card-meta"><span><b class="story-no">14</b><i class="dot"></i>CAPE TOWN · AFRICA</span><span class="source">Reuters</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">14</b><i class="dot"></i>CAPE TOWN · AFRICA</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Gavel and report">
               <rect width="190" height="45" fill="#eee7d7"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -849,11 +839,11 @@
             </svg>
             <h2>Ramaphosa wins court bid over Farmgate report</h2>
             <p class="summary">Court rules 2022 findings unlawful.</p>
-            <p class="mid-why">WHY IT MATTERS · 2022 findings fail a court test.</p>
+            <div class="source">Reuters</div>
           </article>
 
           <article class="card mid-card middle-east" data-story="15">
-            <div class="card-meta"><span><b class="story-no">15</b><i class="dot"></i>HORMUZ · MIDDLE EAST</span><span class="source">AP, Xinhua</span><span class="badge claim">CLAIM</span></div>
+            <div class="card-meta"><span><b class="story-no">15</b><i class="dot"></i>HORMUZ · MIDDLE EAST</span><span class="badge claim">CLAIM</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Oil tanker and sea mine">
               <rect width="190" height="45" fill="#e1e8e8"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -873,11 +863,11 @@
             </svg>
             <h2>Iran says tankers hit mines in Hormuz</h2>
             <p class="summary">Guard account not independently confirmed.</p>
-            <p class="mid-why">WHY IT MATTERS · Mine hits are not yet verified.</p>
+            <div class="source">AP, Xinhua</div>
           </article>
 
           <article class="card mid-card oceania" data-story="16">
-            <div class="card-meta"><span><b class="story-no">16</b><i class="dot"></i>HONIARA</span><span class="source">AAP, PM of Australia</span><span class="badge official">OFFICIAL</span></div>
+            <div class="card-meta"><span><b class="story-no">16</b><i class="dot"></i>HONIARA</span><span class="badge official">OFFICIAL</span></div>
             <svg class="mid-art" viewBox="0 0 190 45" role="img" aria-label="Australia and Solomon Islands flags with treaty">
               <rect width="190" height="45" fill="#e5e9df"/>
               <rect width="190" height="45" fill="url(#banner-light)"/>
@@ -900,7 +890,7 @@
             </svg>
             <h2>Australia and Solomon Islands sign treaty</h2>
             <p class="summary">Solomons scrap China defence deal.</p>
-            <p class="mid-why">WHY IT MATTERS · China deal is to be scrapped.</p>
+            <div class="source">AAP, PM of Australia</div>
           </article>
         </div>
       </section>
