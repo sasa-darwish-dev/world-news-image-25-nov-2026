@@ -1,109 +1,210 @@
 <!doctype html>
 <html lang="en">
+<head>
 <meta charset="utf-8">
-<title>World news — Wednesday 25 November 2026</title>
+<meta name="viewport" content="width=1024, initial-scale=1">
+<title>The Day — Wednesday 25 November 2026</title>
 <style>
-* { box-sizing: border-box; }
-html, body { margin: 0; width: 1024px; height: 1024px; overflow: hidden; }
-body { background: #f3f0e9; color: #172c34; font-family: 'DejaVu Sans', sans-serif; }
-header { position: absolute; left: 32px; right: 32px; top: 26px; height: 154px; border-bottom: 4px solid #172c34; }
-h1 { margin: 0; font-size: 86px; font-weight: 800; line-height: 1.12; letter-spacing: -5px; }
-.date { margin-top: 10px; font-family: 'DejaVu Sans Condensed', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: .3px; }
-.globe { position: absolute; right: 4px; top: 9px; width: 82px; height: 82px; }
-main { position: absolute; left: 32px; right: 32px; top: 202px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-article { position: relative; height: 250px; padding: 23px 24px; background: #fffdf8; border: 1px solid #d4d6cf; border-top: 5px solid var(--accent); }
-.region { color: var(--accent); font-size: 26px; font-weight: 800; line-height: 1.2; letter-spacing: 1.4px; }
-.country { margin-top: 9px; font-family: 'DejaVu Sans Condensed', sans-serif; font-size: 26px; line-height: 1.2; font-weight: 800; }
-.icon { position: absolute; right: 21px; top: 14px; width: 105px; height: 88px; color: var(--accent); }
-h2 { position: absolute; top: 104px; left: 24px; right: 16px; margin: 0; font-family: 'DejaVu Sans Condensed', sans-serif; font-size: 40px; font-weight: 700; line-height: 1.16; letter-spacing: -1.2px; }
-.detail { position: absolute; top: 202px; left: 24px; margin: 0; font-family: 'DejaVu Sans Condensed', sans-serif; font-size: 26px; line-height: 1.3; letter-spacing: -.45px; white-space: nowrap; }
-svg { overflow: visible; }
-.line { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+*{box-sizing:border-box}html,body{margin:0;width:1024px;height:1024px;overflow:hidden}
+:root{--paper:#f2eee5;--card:#fbf9f3;--ink:#1d2e32;--muted:#566365;--rule:#c7c9be;--red:#b64c39;--sea:#28645e;--gold:#b08039;--blue:#526b81;--plum:#775d70;--green:#5d725e}
+body{background:var(--paper);color:var(--ink);font-family:'DejaVu Sans',sans-serif;font-synthesis:none}
+.page{position:relative;width:1024px;height:1024px;padding:24px 32px}
+header{height:68px;position:relative;border-bottom:2px solid var(--ink);display:flex;align-items:center}
+header h1{margin:0;font:700 48px/1.02 'DejaVu Serif',serif;letter-spacing:-1.5px;color:var(--ink);white-space:nowrap}
+
+
+
+
+
+ .metrics{height:68px;margin-top:8px;display:grid;grid-template-columns:repeat(5,1fr);background:#e8e4d9;border-top:1px solid #d8d4c9;border-bottom:1px solid #d8d4c9}
+.metric{position:relative;padding:8px 10px 6px 15px;border-right:1px solid #c9c5b9}
+.metric:last-child{border-right:0}.metric strong{display:block;color:var(--red);font:700 28px/.98 'DejaVu Serif',serif;letter-spacing:-1px}.metric span{display:block;margin-top:4px;color:var(--ink);font:700 11.2px/1.1 'DejaVu Sans Condensed',sans-serif;letter-spacing:.7px;text-transform:uppercase}
+ .leads{height:230px;margin-top:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.lead{position:relative;overflow:hidden;background:var(--card);border:1px solid #d5d2c8;border-top:4px solid var(--accent);padding:8px 14px}
+.lead-meta{font:700 11px/1.2 'DejaVu Sans Condensed',sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--accent)}
+.lead-icon{position:absolute;width:calc(100% - 24px);height:122px;left:12px;top:22px;color:var(--accent)}
+.lead h2{position:absolute;left:14px;right:12px;top:150px;margin:0;font:700 21.5px/1.04 'DejaVu Sans Condensed',sans-serif;letter-spacing:-.45px}
+.lead p{position:absolute;left:14px;right:12px;top:196px;margin:0;font:400 12px/1.25 'DejaVu Sans Condensed',sans-serif;color:#354447}
+.lead:nth-child(3) .lead-icon{height:126px;width:calc(100% - 16px);left:8px}
+.lead .lno{color:var(--red);margin-right:6px;font-weight:800}
+.iconline{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.mid{height:245px;margin-top:8px}
+.sectionhead{height:22px;border-bottom:1px solid var(--ink);display:flex;align-items:flex-start;justify-content:space-between}
+.sectionhead h2{margin:0;font:700 15px/1 'DejaVu Serif',serif;letter-spacing:.2px}
+.sectionhead span{font:700 11px/1.1 'DejaVu Sans Condensed',sans-serif;letter-spacing:1px;color:var(--muted);text-transform:uppercase}
+.midgrid{display:grid;grid-template-columns:1fr 1fr;column-gap:16px;grid-template-rows:repeat(5,44px);padding-top:3px}
+.story{position:relative;min-width:0;border-bottom:1px solid #d7d4ca;padding:2px 3px 1px 42px}
+.storyicon{position:absolute;left:3px;top:7px;width:29px;height:26px;color:var(--accent,var(--sea))}
+.storytop{height:12px;display:flex;align-items:baseline;gap:7px;overflow:hidden;white-space:nowrap}
+.storytop .number{font:700 11px 'DejaVu Sans Condensed',sans-serif;color:var(--red)}
+.storytop .place{font:700 11px 'DejaVu Sans Condensed',sans-serif;letter-spacing:.55px;text-transform:uppercase;color:var(--accent,var(--sea))}
+.story h3{overflow:hidden;text-overflow:clip;white-space:nowrap;margin:0;font:700 14px/1.02 'DejaVu Sans Condensed',sans-serif;letter-spacing:-.12px}
+.story p{overflow:hidden;text-overflow:clip;white-space:nowrap;margin:0;color:#495657;font:400 11.5px/13px 'DejaVu Sans Condensed',sans-serif}
+.also{height:166px;margin-top:8px}
+.alsohead{height:21px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:flex-start}
+.alsohead h2{margin:0;font:700 15px/1 'DejaVu Serif',serif}.alsohead span{font:700 11px 'DejaVu Sans Condensed',sans-serif;letter-spacing:.9px;text-transform:uppercase;color:var(--muted)}
+.briefs{display:grid;grid-template-columns:repeat(4,1fr);column-gap:11px;padding-top:4px}
+.briefcol{min-width:0;padding-right:7px;border-right:1px solid #d0cdc3}.briefcol:last-child{border:0}
+.group{font:700 11px/1.35 'DejaVu Sans Condensed',sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--group);margin:3px 0 1px}
+ .brief{height:18px;white-space:nowrap;overflow:hidden;font:400 11.5px/18px 'DejaVu Sans Condensed',sans-serif;color:#344246;letter-spacing:-.08px}
+.brief b{font:700 11.5px 'DejaVu Sans Condensed',sans-serif;color:var(--red);margin-right:4px}
+.mapstrip{height:119px;margin-top:8px}
+.maphead{height:16px;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--ink)}
+.maphead strong{font:700 11px/1 'DejaVu Serif',serif;letter-spacing:.65px}
+.maphead span{font:700 11px/1 'DejaVu Sans Condensed',sans-serif;letter-spacing:.7px;color:var(--muted);text-transform:uppercase}
+.worldmap{display:block;width:100%;height:87px}
+.maplegend{height:16px;display:flex;align-items:center;justify-content:center;gap:24px;padding:0 4px}
+.maplegend span{font:700 11px/1 'DejaVu Sans Condensed',sans-serif;letter-spacing:.65px;color:var(--ink);white-space:nowrap}
+.maplegend span:before{content:'';display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--c);margin-right:5px;vertical-align:-1px}
+footer{position:absolute;bottom:8px;left:32px;right:32px;height:52px;border-top:1px solid var(--ink);padding-top:5px}
+.check{font:700 11px/1.3 'DejaVu Sans Condensed',sans-serif;color:var(--ink)}
+.sources{margin-top:3px;font:400 8.7px/1.25 'DejaVu Sans Condensed',sans-serif;color:#5a6260;letter-spacing:.08px}
 </style>
-<header>
-  <h1>WORLD NEWS</h1>
-  <div class="date">WEDNESDAY 25 NOVEMBER 2026</div>
-  <svg class="globe" viewBox="0 0 100 100" aria-hidden="true">
-    <circle cx="50" cy="50" r="45" fill="#dde8e2"/>
-    <g fill="none" stroke="#21675d" stroke-width="2.5">
-      <circle cx="50" cy="50" r="39"/><ellipse cx="50" cy="50" rx="18" ry="39"/>
-      <path d="M12 50h76M20 27q30 12 60 0M20 73q30-12 60 0"/>
-    </g>
-    <circle cx="80" cy="23" r="9" fill="#c25b37" stroke="#f3f0e9" stroke-width="4"/>
-  </svg>
-</header>
-<main>
-  <article style="--accent:#21675d">
-    <div class="region">ASIA</div><div class="country">CHINA / PAKISTAN</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Spacecraft launching toward an orbital station">
-      <circle cx="63" cy="42" r="38" fill="#e0ece5"/>
-      <g class="line"><path d="M20 59L48 31 64 47 36 75z" fill="#fffdf8"/>
-      <path d="M48 31l19-3-3 19M25 55l-13 1-6 19 19-7M41 71l-1 13 19-6 1-19"/>
-      <circle cx="47" cy="48" r="6"/><path d="M18 76L8 86m21-9-8 9" stroke="#c25b37"/>
-      <path d="M83 13v23m-7-12h15M68 16l8 1v14l-8-1zm23 1 12-1v14l-12 1z"/>
-      <path d="M80 55h8m-4-4v8"/></g>
+</head>
+<body>
+<div class="page">
+<header><h1>WEDNESDAY 25 NOVEMBER 2026</h1></header>
+<section class="metrics" aria-label="Five figures from the day's reports">
+  <div class="metric"><strong>14</strong><span>Tariff partners proposed</span></div>
+  <div class="metric"><strong>−6.2%</strong><span>Kospi close · Seoul</span></div>
+  <div class="metric"><strong>31+</strong><span>Dead in Cairo fire</span></div>
+  <div class="metric"><strong>5</strong><span>Ukraine regions lose power</span></div>
+  <div class="metric"><strong>7.3m</strong><span>Face aid cuts · WFP</span></div>
+</section>
+<section class="leads" aria-label="Lead stories">
+  <article class="lead" style="--accent:#28645e">
+    <div class="lead-meta"><span class="lno">01</span> Washington · Trade</div>
+    <svg class="lead-icon" viewBox="0 0 300 128" role="img" aria-label="Loaded container ship with a tariff badge">
+      <path d="M0 105h300" stroke="#ced4ca" stroke-width="1"/>
+      <path d="M13 88h221l-16 25H37l-22-18z" fill="#28645e"/>
+      <path d="M27 94h192l-8 13H42z" fill="#4c8175"/>
+      <path d="M27 90V39h48v51M77 90V30h47v60M126 90V43h42v47M170 90V35h43v55" stroke="#fbf9f3" stroke-width="2" fill="#b64c39"/>
+      <path d="M27 56h48m-48 18h48m2-26h47m-47 18h47m-47 18h47m2-29h42m-42 18h42m2-25h43m-43 18h43m-43 18h43" stroke="#f2c7aa" stroke-width="2"/>
+      <path d="M42 31V24h17v7m31 0V18h17v12m77 5V25h16v10" stroke="#1d2e32" stroke-width="3" fill="none"/>
+      <path d="M10 117q18-6 36 0t36 0 36 0 36 0 36 0" fill="none" stroke="#6e9d99" stroke-width="3"/>
+      <circle cx="264" cy="48" r="31" fill="#f4e7c9" stroke="#b08039" stroke-width="3"/>
+      <text x="264" y="43" text-anchor="middle" font-family="DejaVu Sans Condensed" font-size="11" font-weight="700" fill="#775426">TARIFFS</text><text x="264" y="61" text-anchor="middle" font-family="DejaVu Serif" font-size="17" font-weight="700" fill="#b64c39">20%</text>
     </svg>
-    <h2>China launches first<br>foreign astronaut</h2>
-    <p class="detail" data-spacing="-.7" style="letter-spacing: -.7px">Shenzhou-24: Muhammad Zeeshan Ali</p>
+    <h2>U.S. proposes tariffs<br>up to 20%</h2>
+    <p>14 partners targeted over factory capacity.<br>EU and China reject the premise.</p>
   </article>
-  <article style="--accent:#aa452c">
-    <div class="region">AFRICA</div><div class="country">EGYPT</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Fuel tanker and a highway fire">
-      <circle cx="61" cy="43" r="38" fill="#f6e5d9"/>
-      <path d="M60 46C44 34 68 28 62 9c20 13 15 21 22 27 3-9 9-10 10-16 19 25 9 40-10 42z" fill="#d87842"/>
-      <path d="M75 51c-7-12 8-14 6-25 13 14 3 15 10 23z" fill="#f7c378"/>
-      <g class="line"><rect x="7" y="47" width="53" height="26" rx="11" fill="#fffdf8"/>
-      <path d="M60 59h18l12 12v10H8m52-22v22M78 59v12h12M23 48v24m22-24v24"/>
-      <circle cx="24" cy="80" r="7" fill="#fffdf8"/><circle cx="75" cy="80" r="7" fill="#fffdf8"/>
-      <path d="M3 91h101"/></g>
+  <article class="lead" style="--accent:#b64c39">
+    <div class="lead-meta"><span class="lno">02</span> Seoul · New York · Markets</div>
+    <svg class="lead-icon" viewBox="0 0 300 128" role="img" aria-label="Kospi falls sharply while the Dow recovers">
+      <rect x="6" y="6" width="288" height="113" rx="3" fill="#f1eee7"/>
+      <path d="M26 31H282M26 58H282M26 85H282M26 108H282" stroke="#d5d5ce" stroke-width="1"/>
+      <text x="17" y="19" font-family="DejaVu Sans Condensed" font-size="12" font-weight="700" fill="#a64035">KOSPI CLOSE · −6.2%</text>
+      <text x="282" y="33" text-anchor="end" font-family="DejaVu Sans Condensed" font-size="11" font-weight="700" fill="#28645e">DOW +164 · LATE RECOVERY</text>
+      <path d="M19 43l38 2 24 10 27-4 25 20 29 4 22 13 21-8 25 9 44-3" fill="none" stroke="#b64c39" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M157 91l24-13 19 5 21-18 21 2 25-16" fill="none" stroke="#28645e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="184" cy="79" r="4" fill="#28645e"/>
+      <path d="M19 102h260" stroke="#aeb2ab" stroke-width="1.2"/>
     </svg>
-    <h2>Tanker fire<br>kills at least 31</h2>
-    <p class="detail">Highway tanker crash near Cairo</p>
+    <h2>AI sell-off hits Seoul;<br>U.S. ends mixed</h2>
+    <p>Kospi −6.2%; S&amp;P 500 ended −0.3%.<br>Dow closed 164 points higher.</p>
   </article>
-  <article style="--accent:#21675d">
-    <div class="region">ASIA</div><div class="country">CHINA</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Shanghai buildings and an investigation magnifying glass">
-      <circle cx="60" cy="44" r="38" fill="#e0ece5"/>
-      <g class="line"><path d="M7 84h88M13 82V49h20V28h27v51M33 49v33M45 28V13m-8 8h16M69 44V27h18v27"/>
-      <path d="M21 58v5m0 8v5M42 39h8m-8 11h8m-8 11h8"/>
-      <circle cx="77" cy="63" r="18" fill="#fffdf8"/><path d="M90 77l14 14" stroke-width="7"/>
-      <path d="M70 63h14m-7-7v14"/></g>
+  <article class="lead" style="--accent:#526b81">
+    <div class="lead-meta"><span class="lno">03</span> Jiuquan · Tiangong · Space</div>
+    <svg class="lead-icon" viewBox="0 0 300 128" role="img" aria-label="Shenzhou capsule docking with Tiangong above Earth's curved horizon">
+      <path d="M0 103Q150 55 300 103V128H0z" fill="#dce9e9"/>
+      <path d="M0 103Q150 55 300 103" fill="none" stroke="#628f96" stroke-width="3"/>
+      <path d="M12 111Q150 71 288 111" fill="none" stroke="#a8c1bf" stroke-width="1.5"/>
+      <circle cx="38" cy="53" r="2" fill="#b08039"/><circle cx="104" cy="30" r="2" fill="#b08039"/><circle cx="224" cy="43" r="2" fill="#b08039"/>
+      <path d="M166 37h102m-96-8h90m-88 16h87m-75-16v23m24-23v23m24-23v23m24-23v23" fill="none" stroke="#526b81" stroke-width="4" stroke-linecap="round"/>
+      <path d="M180 25h69m-62-6h54" stroke="#8ca0aa" stroke-width="2"/>
+      <path d="M49 70l40-24 28 15-39 25-22-4z" fill="#f2eee5" stroke="#526b81" stroke-width="3"/>
+      <path d="M89 46l11-18 17 33M49 70l-4 21 19-10m14 5 17 8 8-18" fill="#b7c8ce" stroke="#526b81" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="83" cy="65" r="7" fill="#7d9daa" stroke="#526b81" stroke-width="2"/>
+      <path d="M119 61h39" stroke="#b08039" stroke-width="3" stroke-dasharray="5 5"/>
+      <path d="M151 55l9 6-9 6" fill="none" stroke="#b08039" stroke-width="3"/>
+      <path d="M268 33l8 8m-7 8 9-8" stroke="#b64c39" stroke-width="2"/>
     </svg>
-    <h2>Shanghai party chief<br>under investigation</h2>
-    <p class="detail">Chen Jining: law, discipline probe</p>
+    <h2>Pakistan’s Zeeshan Ali<br>joins China’s Tiangong</h2>
+    <p>First foreigner on the station.<br>Shenzhou-24 launched from Jiuquan.</p>
   </article>
-  <article style="--accent:#8c4d64">
-    <div class="region">MIDDLE EAST</div><div class="country">GAZA</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Damaged apartment building after an airstrike">
-      <circle cx="61" cy="43" r="38" fill="#eee1e5"/>
-      <g class="line"><path d="M14 85V27h39l-6 14 16 10-8 13 9 21M14 27V17h42l-3 10M71 85V44h24v41M5 87h98"/>
-      <path d="M25 36h8v9h-8zm0 22h8v9h-8zm52-5h9v9h-9zm0 17h9v9h-9zM42 75l-7 10m24-12 11 12"/>
-      <path d="M67 7l2 13-10 6 15 4 3 13 5-15 15-5-15-3-3-13-5 12z" fill="#fffdf8"/></g>
-    </svg>
-    <h2>Israeli strike kills<br>Hamas's Abu al-Ouf</h2>
-    <p class="detail">Wife and two daughters also killed</p>
-  </article>
-  <article style="--accent:#aa452c">
-    <div class="region">AFRICA</div><div class="country">SOUTH AFRICA</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Court gavel and a report set aside">
-      <circle cx="61" cy="43" r="38" fill="#f6e5d9"/>
-      <g class="line"><path d="M66 34h31v50H62V42z" fill="#fffdf8"/><path d="M66 34v10h31M70 54h19m-19 9h19m-19 9h13"/>
-      <path d="M28 27l13-13 27 27-13 13z" fill="#fffdf8"/><path d="M25 30l19-19M52 57l19-19M45 44L21 69" stroke-width="6"/>
-      <path d="M10 83h46v8H10z" fill="#fffdf8"/><path d="M14 77h38M61 88l41-41" stroke-width="4"/></g>
-    </svg>
-    <h2>Court sets aside<br>Farmgate report</h2>
-    <p class="detail">Report paved way for Ramaphosa bid</p>
-  </article>
-  <article style="--accent:#425b88">
-    <div class="region">EUROPE</div><div class="country">UKRAINE</div>
-    <svg class="icon" viewBox="0 0 110 92" role="img" aria-label="Power pylon with a broken electricity supply">
-      <circle cx="61" cy="43" r="38" fill="#e4e9f2"/>
-      <g class="line"><path d="M29 84L45 14h14l17 70M26 84h53M34 62h36M39 39h26M33 30h38M29 46h46M36 62l34 22M68 62L35 84M42 39l21 23M63 39L41 62"/>
-      <path d="M7 34l9 4m8 2 8 2M73 34l11-4m9-4 12-4M13 41v9m73-15v9"/>
-      <path d="M86 49L75 67h12l-5 19 20-28H89l7-9z" fill="#fffdf8"/></g>
-    </svg>
-    <h2>Russia hits<br>Ukraine’s power grid</h2>
-    <p class="detail">Officials: cuts across five regions</p>
-  </article>
-</main>
+</section>
+<section class="mid" aria-label="Ten more major reports">
+  <div class="sectionhead"><h2>THE NEXT FILES</h2><span>Places, consequences, reported claims</span></div>
+  <div class="midgrid">
+    <article class="story" style="--accent:#b08039"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M5 23h23M8 21V7h16v14M12 7V3h8v4m-9 5h3m3 0h3m-9 4h3m3 0h3"/><path d="M19 4h7" stroke="#b64c39" stroke-width="2"/></svg><div class="storytop"><span class="number">04</span><span class="place">LONDON · ENERGY</span></div><h3>UK household energy cap rises 26% in January</h3><p>Typical bill: £2,166 from 1 January, Ofgem says.</p></article>
+    <article class="story" style="--accent:#b64c39"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M2 20h25l-4 5H7zM6 20V12h13v8m0-5h6l4 5M9 25v2m14-2v2"/><path d="M19 11c-1-4 5-4 3-9 7 4 6 9 2 12" fill="#b64c39"/></svg><div class="storytop"><span class="number">05</span><span class="place">GIZA · EGYPT</span></div><h3>Tanker fire on Cairo ring road kills at least 31</h3><p>Crash ignited a huge highway fire.</p></article>
+    <article class="story" style="--accent:#775d70"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M7 25V5h15v20m-15-15h15m-9-5V2h5v3m-7 6h2m4 0h2m-8 5h2m4 0h2M24 10l6 3-2 7-5-2-3-6z"/><path d="M23 3l2 4 4 1-4 2-1 4-2-4-4-1 4-2z" fill="#b64c39"/></svg><div class="storytop"><span class="number">06</span><span class="place">GAZA CITY · WAR</span></div><h3>Israeli strike kills Hamas security chief</h3><p>Mohammad Abuelouf; wife and two daughters killed.</p></article>
+    <article class="story" style="--accent:#b64c39"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M3 24h27M8 20V9h14v11M5 9h20l-3-5H9zM12 13h2m5 0h2M26 7l4-3m-3 8 4 1"/><circle cx="27" cy="19" r="3" fill="#b64c39"/></svg><div class="storytop"><span class="number">07</span><span class="place">RIYADH · RED SEA</span></div><h3>Houthi strike in Riyadh; 11 injured</h3><p>Ras Tanura refinery fire reported; coalition hit Hodeidah.</p></article>
+    <article class="story" style="--accent:#526b81"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M4 25h24M7 23V9h18v14M4 9l12-6 12 6M11 13h3m4 0h3m-10 5h3m4 0h3"/><path d="M7 4l18 18" stroke="#b64c39" stroke-width="2.2"/></svg><div class="storytop"><span class="number">08</span><span class="place">JERUSALEM · JUSTICE</span></div><h3>Judges urge dropping top Netanyahu charges</h3><p>Netanyahu says the trial “must end.”</p></article>
+    <article class="story" style="--accent:#b08039"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M4 8h24v17H4zM4 8l12-6 12 6M9 13h14m-14 4h14m-14 4h9"/><path d="M7 24L26 5" stroke="#b64c39" stroke-width="2.5"/></svg><div class="storytop"><span class="number">09</span><span class="place">CAPE TOWN · COURT</span></div><h3>Ramaphosa wins court bid over Farmgate report</h3><p>2022 panel findings declared unlawful.</p></article>
+    <article class="story" style="--accent:#526b81"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M5 25L12 3h7l8 22M3 25h27M8 17h15M10 10h12M7 8h17"/><path d="M22 4l-4 8h5l-3 8 8-11h-5l3-5z" fill="#b64c39"/></svg><div class="storytop"><span class="number">10</span><span class="place">UKRAINE · POWER</span></div><h3>Russian strikes cut power in five regions</h3><p>DTEK plant halted; gas-site fire in Poltava.</p></article>
+    <article class="story" style="--accent:#526b81"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M3 23h26M5 20V9h22v11M8 9V5h16v4m-13 4v3m6-3v3m6-3v3"/><path d="M3 5l5 2M24 3l5-2M14 2l-4 4m14 3 4 4" stroke="#b64c39" stroke-width="2"/></svg><div class="storytop"><span class="number">11</span><span class="place">SAMARA · RUSSIA</span></div><h3>Ukrainian drones strike Russian refinery cities</h3><p>One killed; at least 14 refineries hit since Nov 1.</p></article>
+    <article class="story" style="--accent:#775d70"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M3 21h26l-3 4H8zM7 21V9h14v12m0-7h5l4 7M10 25v2m15-2v2"/><path d="M8 6l7-4 9 4-8 2-2 4-2-4z" fill="#e5e9eb" stroke="#775d70" stroke-width="1.5"/></svg><div class="storytop"><span class="number">12</span><span class="place">LIBYA · MEDITERRANEAN</span></div><h3>Drone strike on Russian ship kills two Libyan officers</h3><p>Italy’s Tajani: violating Libya’s sovereignty was a mistake.</p></article>
+    <article class="story" style="--accent:#b08039"><svg class="storyicon" viewBox="0 0 32 28" aria-hidden="true"><path class="iconline" d="M4 25h24M7 22V6h18v16M11 10h4m3 0h3m-10 5h4m3 0h3"/><path d="M3 4l5-3 5 3-5 3zM23 4l5-3 4 3-5 3z" fill="#b08039"/></svg><div class="storytop"><span class="number">13</span><span class="place">IOWA · U.S.</span></div><h3>Army detonates about five tons of lead azide</h3><p>68 barrels; evacuation within five miles.</p></article>
+  </div>
+</section>
+<section class="also" aria-label="Other reports from Wednesday">
+  <div class="alsohead"><h2>ALSO TODAY</h2><span>Briefs by region · story numbers match the verified list</span></div>
+  <div class="briefs">
+    <div class="briefcol" style="--group:#8b5a44"><div class="group">Americas</div>
+      <div class="brief"><b>16</b>Colombia frees about 30 siege hostages.</div>
+      <div class="group" style="--group:#28645e">Asia</div>
+      <div class="brief"><b>15</b>Chen Jining probed in Shanghai.</div>
+      <div class="brief"><b>19</b>N. Korea expels Swiss envoy in 48 hours.</div>
+      <div class="brief"><b>23</b>Hasina eyes Bangladesh return Dec 16.</div>
+      <div class="brief"><b>24</b>Wage proposal: 17,500 taka monthly.</div>
+    </div>
+    <div class="briefcol" style="--group:#526b81"><div class="group">Europe</div>
+      <div class="brief"><b>14</b>Canaries: record 2,100+ arrivals in 24h.</div>
+      <div class="brief"><b>18</b>Puigdemont plans Spain return: 12 Dec.</div>
+      <div class="brief"><b>21</b>Pope calls COP31 failure “troubling.”</div>
+      <div class="brief"><b>26</b>Two charged over royal-home break-in.</div>
+      <div class="brief"><b>28</b>Kremlin rejects Johnson on Ukraine.</div>
+      <div class="brief"><b>31</b>Bulgaria stops migrant boat; 35 aboard.</div>
+      <div class="brief"><b>32</b>RAF parks jets inside amid drone fears.</div>
+    </div>
+    <div class="briefcol" style="--group:#b08039"><div class="group">Africa · Oceania</div>
+      <div class="brief"><b>20</b>Sudan: RSF drones kill 19 civilians.</div>
+      <div class="brief"><b>30</b>Saudi national kidnapped in Niger.</div>
+      <div class="brief"><b>34</b>CAS restores Senegal’s AFCON title.</div>
+      <div class="brief"><b>25</b>Solomons–Australia sign security pact.</div>
+    </div>
+    <div class="briefcol" style="--group:#775d70"><div class="group">Middle East · Global</div>
+      <div class="brief"><b>17</b>Iraq court backs Kurdistan border plan.</div>
+      <div class="brief"><b>22</b>Iran says it can ride out U.S. blockade.</div>
+      <div class="brief"><b>27</b>Lebanon airport no. 2 opens next month.</div>
+      <div class="brief"><b>33</b>Rain threatens 1,000 Gaza shelter sites.</div>
+      <div class="brief"><b>29</b>WFP: war leaves 7.3m facing aid cuts.</div>
+    </div>
+  </div>
+</section>
+<section class="mapstrip" aria-label="World map with numbered story locations">
+ <div class="maphead"><strong>THE WORLD, PINNED</strong><span>20 reported places · numbers match story IDs</span></div>
+ <svg class="worldmap" viewBox="0 0 960 87" role="img" aria-label="Abstract dot-grid world map with 20 numbered story-location pins">
+  <defs><pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="1.7" cy="1.7" r="1.65" fill="#78877f"/></pattern></defs>
+  <g fill="url(#dots)" opacity="1">
+   <path d="M50 15l24-11 40 2 20 10 32-7 34 10 36-3 27 13-7 12-23 3-12 15-22 1-11 17-20-5-9-14-24-1-15-13-25-3-20-12-20 2z"/>
+   <path d="M224 41l20-6 19 8 13 14-6 17-11 7-9-10-6-14-15-5z"/>
+   <path d="M236 15l29-7 30 6 27 14-8 13-24 4-15 12-19-8-9-18z"/>
+   <path d="M440 15l19-10 26 4 13 9-8 9-21 1-14 9-19-5z"/>
+   <path d="M451 38l23-7 27 6 15 15-5 15-13 13-16-4-10-14-15-5z"/>
+   <path d="M493 35l22-4 22 9 14 14-8 12-20 5-17-10-13-12z"/>
+   <path d="M476 15l35-11 45 4 30-5 48 8 36-4 42 10 42-4 44 11-6 13-29 5-22-8-25 10-24-5-17 10-28-8-27 8-25-9-21 8-18-11-29 5-18-11-27 5-14-12z"/>
+   <path d="M790 54l17-8 24 6 15 11-15 11-24-5z"/>
+  </g>
+  <g fill="none" stroke-width="1.2" opacity=".85">
+   <path d="M315 47L291 34" stroke="#8b5a44"/><path d="M494 42L480 15" stroke="#526b81"/><path d="M548 41L538 19" stroke="#526b81"/><path d="M467 58L484 32" stroke="#b08039"/><path d="M584 53L566 33" stroke="#b08039"/><path d="M626 11L608 22" stroke="#775d70"/><path d="M540 8L556 16" stroke="#526b81"/><path d="M692 48L706 28" stroke="#28645e"/>
+  </g>
+  <g font-family="DejaVu Sans Condensed" font-weight="700" font-size="9" text-anchor="middle" dominant-baseline="central">
+   <g fill="#8b5a44"><circle cx="288" cy="21" r="8"/><text x="288" y="21" fill="#fff">01</text><circle cx="251" cy="20" r="8"/><text x="251" y="20" fill="#fff">13</text><circle cx="315" cy="47" r="8"/><text x="315" y="47" fill="#fff">16</text></g>
+   <g fill="#526b81"><circle cx="443" cy="26" r="8"/><text x="443" y="26" fill="#fff">14</text><circle cx="470" cy="20" r="8"/><text x="470" y="20" fill="#fff">18</text><circle cx="494" cy="42" r="8"/><text x="494" y="42" fill="#fff">32</text><circle cx="540" cy="8" r="8"/><text x="540" y="8" fill="#fff">10</text><circle cx="548" cy="41" r="8"/><text x="548" y="41" fill="#fff">31</text><circle cx="511" cy="20" r="8"/><text x="511" y="20" fill="#fff">21</text></g>
+   <g fill="#b08039"><circle cx="467" cy="58" r="8"/><text x="467" y="58" fill="#fff">30</text><circle cx="584" cy="53" r="8"/><text x="584" y="53" fill="#fff">20</text><circle cx="530" cy="24" r="8"/><text x="530" y="24" fill="#fff">12</text><circle cx="526" cy="53" r="8"/><text x="526" y="53" fill="#fff">09</text></g>
+   <g fill="#775d70"><circle cx="566" cy="24" r="8"/><text x="566" y="24" fill="#fff">06</text><circle cx="598" cy="28" r="8"/><text x="598" y="28" fill="#fff">07</text><circle cx="626" cy="11" r="8"/><text x="626" y="11" fill="#fff">22</text></g>
+   <g fill="#28645e"><circle cx="726" cy="20" r="8"/><text x="726" y="20" fill="#fff">03</text><circle cx="794" cy="21" r="8"/><text x="794" y="21" fill="#fff">19</text><circle cx="692" cy="48" r="8"/><text x="692" y="48" fill="#fff">23</text></g>
+   <g fill="#5d725e"><circle cx="852" cy="54" r="8"/><text x="852" y="54" fill="#fff">25</text></g>
+  </g>
+ </svg>
+ <div class="maplegend"><span style="--c:#8b5a44">AMERICAS</span><span style="--c:#28645e">ASIA</span><span style="--c:#526b81">EUROPE</span><span style="--c:#b08039">AFRICA</span><span style="--c:#775d70">MIDDLE EAST</span><span style="--c:#5d725e">OCEANIA</span></div>
+</section>
+<footer>
+ <div class="check">DATE CHECK · Every item happened or was first reported on Wednesday 25 November 2026; story 20 describes Tuesday events reported Wednesday. Claims are attributed in the text.</div>
+ <div class="sources">SOURCES IN THE VERIFIED STORY FILE · Reuters · AP · Xinhua · BBC · Al Jazeera · Yonhap · CNBC · Ofgem · AFP · ABC · KCNA · Democracy Now · The Times. No other facts added.</div>
+</footer>
+</div>
+</body>
 </html>
